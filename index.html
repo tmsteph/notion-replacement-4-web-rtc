@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Sync App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WebRTC Sync App</h1>
+    </header>
+    <nav>
+        <button id="notes-tab">Notes</button>
+        <button id="tasks-tab">Tasks</button>
+        <button id="generate-offer">Generate Offer</button>
+        <button id="connect-peer">Connect Peer</button>
+    </nav>
+    <main id="content"></main>
+    <canvas id="qrcode"></canvas>
+    <input type="file" id="peer-file" hidden>
+    <script src="app.js" type="module"></script>
+    <script src="webrtc.js" type="module"></script>
+</body>
+</html>
